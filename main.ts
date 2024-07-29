@@ -4,7 +4,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
-scene.setBackgroundColor(7)
+scene.setBackgroundColor(10)
 mySprite = sprites.create(img`
     4 4 4 . . 4 4 4 4 4 . . . . . . 
     4 5 5 4 4 5 5 5 5 5 4 4 . . . . 
