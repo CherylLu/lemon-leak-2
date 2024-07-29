@@ -32,21 +32,21 @@ mySprite.setStayInScreen(true)
 info.startCountdown(60)
 game.onUpdateInterval(500, function () {
     projectile = sprites.createProjectileFromSide(img`
-        . . . . . . . 6 . . . . . . . . 
-        . . . . . . 8 6 6 . . . 6 8 . . 
-        . . . e e e 8 8 6 6 . 6 7 8 . . 
-        . . e 2 2 2 2 e 8 6 6 7 6 . . . 
-        . e 2 2 4 4 2 7 7 7 7 7 8 6 . . 
-        . e 2 4 4 2 6 7 7 7 6 7 6 8 8 . 
-        e 2 4 5 2 2 6 7 7 6 2 7 7 6 . . 
-        e 2 4 4 2 2 6 7 6 2 2 6 7 7 6 . 
-        e 2 4 2 2 2 6 6 2 2 2 e 7 7 6 . 
-        e 2 4 2 2 4 2 2 2 4 2 2 e 7 6 . 
-        e 2 4 2 2 2 2 2 2 2 2 2 e c 6 . 
-        e 2 2 2 2 2 2 2 4 e 2 e e c . . 
-        e e 2 e 2 2 4 2 2 e e e c . . . 
-        e e e e 2 e 2 2 e e e c . . . . 
-        e e e 2 e e c e c c c . . . . . 
-        . c c c c c c c . . . . . . . . 
+        . . . . . . . . . c c c c c . . 
+        . . . . . . c c c 5 5 5 5 c c . 
+        . . . . c c 5 5 5 5 5 5 5 5 c . 
+        . . . . c b b b b b b 5 5 5 c . 
+        . . . c 9 9 9 b b 9 b b c c . . 
+        . . . c 9 9 9 9 b 9 9 9 c . c c 
+        . . . c d 9 9 9 b 9 9 9 c b 5 c 
+        . . c c d 9 c 9 b 9 9 9 b b 5 c 
+        c c c d d 9 9 9 b 9 b 9 5 5 5 c 
+        f d d d 9 9 9 9 9 9 b 9 b b c c 
+        . f f 9 9 9 9 9 9 b b 9 f . . . 
+        . . . f 9 9 9 9 9 b b b f . . . 
+        . . . . f f 9 9 b b 5 5 f . . . 
+        . . . . . . f 5 5 5 5 5 f . . . 
+        . . . . . . . f f f f f f . . . 
+        . . . . . . . . . . . . . . . . 
         `, randint(0, -50), randint(10, 50))
 })
