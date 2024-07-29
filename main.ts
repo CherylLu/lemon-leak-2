@@ -6,6 +6,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 let projectile: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundColor(9)
+tiles.setCurrentTilemap(tilemap`層級2`)
+let mySprite2 = sprites.create(assets.image`我的影像`, SpriteKind.Food)
+mySprite2.setPosition(52, 83)
 mySprite = sprites.create(img`
     4 4 4 . . 4 4 4 4 4 . . . . . . 
     4 5 5 4 4 5 5 5 5 5 4 4 . . . . 
