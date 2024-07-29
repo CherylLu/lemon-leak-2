@@ -1,10 +1,11 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     mySprite.startEffect(effects.spray, 200)
-    info.changeScoreBy(1)
+    info.changeScoreBy(2)
+    sprites.destroy(otherSprite)
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
-scene.setBackgroundColor(10)
+scene.setBackgroundColor(9)
 mySprite = sprites.create(img`
     4 4 4 . . 4 4 4 4 4 . . . . . . 
     4 5 5 4 4 5 5 5 5 5 4 4 . . . . 
@@ -25,8 +26,8 @@ mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setStayInScreen(true)
-info.startCountdown(20)
-game.onUpdateInterval(2000, function () {
+info.startCountdown(60)
+game.onUpdateInterval(500, function () {
     projectile = sprites.createProjectileFromSide(img`
         . . . . . . . 6 . . . . . . . . 
         . . . . . . 8 6 6 . . . 6 8 . . 
